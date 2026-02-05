@@ -1,0 +1,103 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 95%;
+    box-shadow: var(--shadow);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.slots-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.slot-card {
+    width: 140px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slot-header {
+    background: var(--primary-light);
+    padding: 8px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.slot-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary);
+    color: white;
+}
+
+.slot-date {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.slot-info {
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-delete {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.8rem;
+    background: white;
+    color: var(--text-gray);
+    border-top: 1px solid var(--border-color);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-actions button {
+    padding: 10px 40px;
+    font-weight: 600;
+}
+
+.btn-cancel {
+    background: #f0f0f0;
+    color: var(--text-gray);
+}
+
+.btn-ok {
+    background: var(--primary);
+    color: white;
+}

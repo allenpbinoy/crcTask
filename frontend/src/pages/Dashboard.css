@@ -1,0 +1,83 @@
+.dashboard-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.btn-add {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.month-section {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.month-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    min-width: 100px;
+    padding-top: 20px;
+}
+
+.slots-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.slot-card-mini {
+    width: 120px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--primary-light);
+}
+
+.slot-header-mini {
+    padding: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary);
+}
+
+.slot-body-mini {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-top: 1px solid var(--border-color);
+}
+
+.slot-date-mini {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.no-bookings {
+    text-align: center;
+    color: var(--text-gray);
+    margin-top: 50px;
+}

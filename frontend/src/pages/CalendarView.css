@@ -1,0 +1,136 @@
+.calendar-container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.calendar-header h1 {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.calendar-legend {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-item .box {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--border-color);
+}
+
+.box.selected {
+    background-color: var(--primary);
+}
+
+.box.selectable {
+    background-color: var(--primary-light);
+}
+
+.box.non-selectable {
+    background-color: #f0f0f0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+.weekday-header {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    color: var(--text-gray);
+}
+
+.calendar-day {
+    height: 100px;
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.calendar-day.empty {
+    border: none;
+}
+
+.calendar-day.selectable {
+    background-color: var(--primary-light);
+    cursor: pointer;
+}
+
+.calendar-day.selected {
+    background-color: var(--primary);
+    color: white;
+}
+
+.calendar-day.sunday {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.day-number {
+    font-weight: 600;
+}
+
+.batch-indicator {
+    font-size: 0.75rem;
+    background: white;
+    color: var(--primary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.calendar-day.selected .batch-indicator {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+}
+
+.calendar-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-submit {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 1rem;
+}
